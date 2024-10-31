@@ -27,8 +27,8 @@ export default {
 .square-image-container {
   position: relative;
   width: 100%;
-  height: 300px;
-  max-width: 300px; /* Taille fixe ou ajustez selon vos besoins */
+  height: 350px;
+  max-width: 350px; /* Taille fixe ou ajustez selon vos besoins */
   aspect-ratio: 1/1;
   overflow: hidden;
   display: block;

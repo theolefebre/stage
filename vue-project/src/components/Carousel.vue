@@ -94,7 +94,7 @@ export default {
   max-width: 100%;
   overflow: hidden;
   position: relative;
-  margin-left: 20px;
+  margin: 0px 60px;
 }
 
 .carousel-wrapper {
@@ -115,7 +115,7 @@ export default {
 
 .carousel-image {
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -135,7 +135,7 @@ export default {
 }
 
 .carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.5); /* Change la couleur de fond au survol */
+  background-color: rgba(0, 0, 0, 0.3); /* Change la couleur de fond au survol */
   opacity: 1; /* Augmente l'opacité au survol */
 }
 

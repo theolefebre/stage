@@ -8,7 +8,7 @@
 
     </div>
     <div class="container">
-      <div class="square">
+      <div class="square" id="first-carousel">
         <SquareImage imageSrc="/src/assets/couv-zinc/image1.jpg" link="services/couvreur-zingueur">
           <p>couverture zinguerie</p>
         </SquareImage>
@@ -19,26 +19,26 @@
           '/src/assets/couv-zinc/image4.jpg'
         ]" />
       </div>
-      <div class="square">
-        <SquareImage imageSrc="/src/assets/square2.jpg" link="services/bardage-isolation">
+      <div class="square-right">
+        <Carousel :images="[
+          '/src/assets/bard-isol/bardage1.jpg',
+          '/src/assets/bard-isol/isolation1.jpg',
+          '/src/assets/bard-isol/isolation2.jpeg',
+          '/src/assets/bard-isol/bardage2.jpeg'
+        ]" />
+        <SquareImage imageSrc="/src/assets/bard-isol/bardage.jpeg" link="services/bardage-isolation">
           <p>bardage isolation</p>
         </SquareImage>
-        <Carousel :images="[
-          '/src/assets/couv-zinc/image1.jpg',
-          '/src/assets/couv-zinc/image2.jpg',
-          '/src/assets/couv-zinc/image3.webp',
-          '/src/assets/couv-zinc/image4.jpg'
-        ]" />
       </div>
       <div class="square">
-        <SquareImage imageSrc="/src/assets/square3.jpg" link="services/plomberie-sanitaire">
+        <SquareImage imageSrc="/src/assets/plom-sani/plomberie.jpeg" link="services/plomberie-sanitaire">
           <p>plomberie sanitaire</p>
         </SquareImage>
         <Carousel :images="[
-          '/src/assets/couv-zinc/image1.jpg',
-          '/src/assets/couv-zinc/image2.jpg',
-          '/src/assets/couv-zinc/image3.webp',
-          '/src/assets/couv-zinc/image4.jpg'
+          '/src/assets/plom-sani/plomberie1.jpeg',
+          '/src/assets/plom-sani/sanitaire1.jpeg',
+          '/src/assets/plom-sani/',
+          '/src/assets/plom-sani/'
         ]" />
       </div>
     </div>
@@ -113,6 +113,13 @@ export default {
 
 .square {
   display: flex;
-  margin: 20px 20px;
+  margin: 30px 0px;
+  margin-left: 60px;
+}
+
+.square-right {
+  display: flex;
+  margin: 30px 0px;
+  margin-right: 60px;
 }
 </style>

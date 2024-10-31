@@ -10,7 +10,7 @@
       </div>
       <ul>
         <li><router-link to="/">Accueil</router-link></li>
-        <li><router-link to="/services">Services</router-link></li>
+        <li @click="goToCarousel" class="scroll-link">Services</li>
         <li><router-link to="/contact">Contact</router-link></li>
         <li><router-link to="/about">À propos</router-link></li>
       </ul>
@@ -26,11 +26,27 @@
 
 <script lang="ts">
 import ThemeToggle from './ThemeToggle.vue';
+import { useRouter } from 'vue-router';
 
 export default {
   name: 'Header',
   components: {
     ThemeToggle
+  },
+  setup() {
+    const router = useRouter();
+
+    const goToCarousel = () => {
+      router.push('/').then(() => {
+        // Une fois redirigé sur la page d'accueil, scroll vers le premier carrousel
+        const section = document.getElementById('first-carousel');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    };
+
+    return { goToCarousel };
   }
 };
 </script>
@@ -72,7 +88,6 @@ nav ul li a {
 }
 
 .icone {
-  justify-content: ;
   width: 17px;
 }
 
@@ -80,3 +95,4 @@ body {
   padding-top: 60px;
 }
 </style>
+
