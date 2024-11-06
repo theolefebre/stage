@@ -4,7 +4,7 @@
       <img src="../assets/home/image.jpg" alt="caca">
     </div>
     <div class="hero-text">
-      <h1 id="titre">couverture zinguerie fenêtre de toit <br>bardage isolation plomberie sanitaire </h1>
+      <h1 id="titre">couverture zinguerie fenêtre de toit <br>bardage isolation <br>plomberie sanitaire </h1>
 
     </div>
     <div class="container">
@@ -78,7 +78,7 @@ export default {
 
 .hero-text {
   position: absolute;
-  top: 27%;
+  top: 200px;
   left: 20px;
   width: 43%;
   transform: translateY(-50%);

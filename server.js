@@ -1,30 +1,41 @@
+const express = require('express');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-// Création du transporteur SMTP
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com', // Serveur SMTP
-  port: 587, // Port TLS
-  secure: false, // true pour SSL, false pour TLS
+  service: 'gmail', // ou autre service de mail
   auth: {
-    user: 'jaquislefebre@gmail.com', // Ton adresse email
-    pass: 'La-bas9e', // Ton mot de passe
-  },
+    user: 'theoservertest1@gmail.com', // remplacer par l'email de ton serveur
+    pass: 'gefd pker dezw bcvh' // remplacer par le mot de passe de ton serveur
+  }
 });
 
+app.post('/send-email', (req, res) => {
+  const { to, from, subject, message } = req.body;
 
-// Configuration du message à envoyer
-const mailOptions = {
-  from: 'lefebretheo88@gmail.com',  // L'adresse email de l'expéditeur
-  to: 'theo.lefebre@epitech.eu', // Adresse email du destinataire
-  subject: 'Hello avec Nodemailer', // Sujet de l'email
-  text: 'Ceci est un test d\'envoi d\'email avec Nodemailer', // Corps de l'email en texte
-  html: '<b>Ceci est un test d\'envoi d\'email avec Nodemailer en HTML</b>' // Optionnel, corps de l'email en HTML
-};
+  const mailOptions = {
+    from,
+    to,
+    subject,
+    text: message
+  };
 
-// Envoi de l'email
-transporter.sendMail(mailOptions, (error, info) => {
-  if (error) {
-    return console.log('Erreur d\'envoi: ', error);
-  }
-  console.log('Email envoyé avec succès: ', info.response);
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Erreur d\'envoi :', error);
+      res.status(500).send('Erreur lors de l\'envoi de l\'email');
+    } else {
+      console.log('Email envoyé :', info.response);
+      res.status(200).send('Email envoyé avec succès');
+    }
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Serveur backend démarré sur http://localhost:3000');
 });

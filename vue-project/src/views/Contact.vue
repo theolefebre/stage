@@ -1,18 +1,18 @@
 <template>
-  <div class="contact">
-    <h1>Contactez-nous</h1>
+  <div class="email-form">
+    <h2>Envoyer un Email</h2>
     <form @submit.prevent="sendEmail">
       <div>
-        <label for="email">Email :</label>
-        <input v-model="form.email" type="email" id="email" required />
+        <label for="email">Adresse Email</label>
+        <input type="email" v-model="email" required />
       </div>
       <div>
-        <label for="subject">Sujet :</label>
-        <input v-model="form.subject" type="text" id="subject" required />
+        <label for="subject">Sujet</label>
+        <input type="text" v-model="subject" required />
       </div>
       <div>
-        <label for="message">Message :</label>
-        <textarea v-model="form.message" id="message" required></textarea>
+        <label for="message">Message</label>
+        <textarea v-model="message" required></textarea>
       </div>
       <button type="submit">Envoyer</button>
     </form>
@@ -23,11 +23,9 @@
 export default {
   data() {
     return {
-      form: {
-        email: '',
-        subject: '',
-        message: ''
-      }
+      email: '',
+      subject: '',
+      message: ''
     };
   },
   methods: {
@@ -36,19 +34,27 @@ export default {
         const response = await fetch('http://localhost:3000/send-email', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
           },
-          body: JSON.stringify(this.form),
+          body: JSON.stringify({
+            to: 'jaquislefebre@gmail.com', // Adresse email cible fixe
+            from: this.email,
+            subject: this.subject,
+            message: this.message
+          })
         });
 
         if (response.ok) {
-          console.log('Email envoyé avec succès');
-          // Optionnel : ajouter un message de confirmation pour l'utilisateur
+          alert('Email envoyé avec succès !');
+          this.email = '';
+          this.subject = '';
+          this.message = '';
         } else {
-          console.error('Erreur lors de l\'envoi de l\'email');
+          alert("Échec de l'envoi de l'email.");
         }
       } catch (error) {
-        console.error('Erreur lors de l\'envoi de l\'email:', error);
+        console.error('Erreur lors de l\'envoi de l\'email :', error);
+        alert("Erreur lors de l'envoi de l'email.");
       }
     }
   }
@@ -56,25 +62,8 @@ export default {
 </script>
 
 <style scoped>
-.contact {
-  max-width: 600px;
+.email-form {
+  max-width: 500px;
   margin: auto;
-  padding: 7em;
-}
-
-form div {
-  margin-bottom: 1em;
-}
-
-button {
-  padding: 0.5em 1em;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
 }
 </style>
