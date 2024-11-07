@@ -63,8 +63,14 @@ export default {
 
 <style scoped>
 .email-form {
+  padding-top: 7em;
   max-width: 500px;
   margin: auto;
 }
+
+form div {
+  margin-bottom: 1em;
+}
+
 </style>
 

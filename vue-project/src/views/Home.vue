@@ -100,7 +100,7 @@ export default {
 }
 
 #titre {
-  color: rgb(0, 0, 152);
+  color: rgb(0, 0, 180);
   text-transform: uppercase;
 }
 
@@ -116,4 +116,3 @@ export default {
   margin: 20px 20px;
 }
 </style>
-
