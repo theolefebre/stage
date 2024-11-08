@@ -20,25 +20,25 @@
         ]" />
       </div>
       <div class="square">
-        <SquareImage imageSrc="/src/assets/square2.jpg" link="services/bardage-isolation">
+        <SquareImage imageSrc="/src/assets/bard-isol/bardage1.jpg" link="services/bardage-isolation">
           <p>bardage isolation</p>
         </SquareImage>
         <Carousel :images="[
-          '/src/assets/couv-zinc/image1.jpg',
-          '/src/assets/couv-zinc/image2.jpg',
-          '/src/assets/couv-zinc/image3.webp',
-          '/src/assets/couv-zinc/image4.jpg'
+          '/src/assets/bard-isol/bardage_metallique.webp',
+          '/src/assets/bard-isol/isolation1.webp',
+          '/src/assets/bard-isol/isolation2.webp',
+          '/src/assets/bard-isol/isolation2.webp'
         ]" />
       </div>
-      <div class="square">
-        <SquareImage imageSrc="/src/assets/square3.jpg" link="services/plomberie-sanitaire">
+      <div class="square" id="last-one">
+        <SquareImage imageSrc="/src/assets/plom-sani/plomberie1.jpeg" link="services/plomberie-sanitaire">
           <p>plomberie sanitaire</p>
         </SquareImage>
         <Carousel :images="[
-          '/src/assets/couv-zinc/image1.jpg',
-          '/src/assets/couv-zinc/image2.jpg',
-          '/src/assets/couv-zinc/image3.webp',
-          '/src/assets/couv-zinc/image4.jpg'
+          '/src/assets/plom-sani/douche1.jpg',
+          '/src/assets/plom-sani/sanitaire2.jpg',
+          '/src/assets/plom-sani/sanitaire2.jpg',
+          '/src/assets/plom-sani/sanitaire2.jpg'
         ]" />
       </div>
     </div>
@@ -112,7 +112,13 @@ export default {
 }
 
 .square {
+  font-size: medium;
   display: flex;
-  margin: 20px 20px;
+  margin: 0 30px;
+  margin-top: 40px;
+}
+
+#last-one {
+  margin-bottom: 50px;
 }
 </style>

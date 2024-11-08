@@ -94,13 +94,13 @@ export default {
   max-width: 100%;
   overflow: hidden;
   position: relative;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 
 .carousel-wrapper {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
 .carousel-slides {
