@@ -2,7 +2,7 @@
   <div class="couvreur-page">
     <h1 class="main-title"><br>Bardage-Isolation</h1>
     <div class="main-image-container">
-      <img src="@/assets/couv-zinc/image2.jpg" alt="Couvreur Zingueur" class="main-image" />
+      <img src="@/assets/bard-isol/bardage_metallique.webp" alt="Couvreur Zingueur" class="main-image" />
       <p class="description">
         Le bardage est un revêtement extérieur qui protège les murs des intempéries tout en offrant une touche esthétique, avec des matériaux variés comme le bois, le PVC ou le métal. L'isolation, par l'intérieur ou l'extérieur, vise à améliorer l'efficacité énergétique et le confort thermique en réduisant les pertes de chaleur, souvent combinée avec un bardage pour une protection optimale et des économies d'énergie.
       </p>
@@ -14,20 +14,20 @@
     <div class="additional-services">
       <!-- Image 1 -->
       <div class="service-item">
-        <img src="@/assets/couv-zinc/image1.jpg" alt="Service 1" class="service-image" />
-        <p>Isolation des combles</p>
+        <img src="@/assets/bard-isol/isolation1.webp" alt="Service 1" class="service-image" />
+        <p>Isolation des combles/Combles perdus</p>
       </div>
 
       <!-- Image 2 -->
       <div class="service-item">
-        <img src="@/assets/couv-zinc/démoussage.jpg" alt="Service 2" class="service-image" />
-        <p>Installation de gouttières</p>
+        <img src="@/assets/bard-isol/bardage1.jpg" alt="Service 2" class="service-image" />
+        <p>Isolation/Bardage</p>
       </div>
 
       <!-- Image 3 -->
       <div class="service-item">
-        <img src="@/assets/couv-zinc/image4.jpg" alt="Service 3" class="service-image" />
-        <p>Réparation de tuiles</p>
+        <img src="@/assets/bard-isol/isolation2.webp" alt="Service 3" class="service-image" />
+        <p>Isolation sous-rampant</p>
       </div>
     </div>
   </div>

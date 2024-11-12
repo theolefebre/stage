@@ -13,20 +13,20 @@
     <div class="additional-services">
       <!-- Image 1 -->
       <div class="service-item">
-        <img src="@/assets/couv-zinc/image1.jpg" alt="Service 1" class="service-image" />
-        <p>Isolation des combles</p>
+        <img src="@/assets/plom-sani/plomberie1.jpeg" alt="Service 1" class="service-image" />
+        <p>Plomberie/sanitaire</p>
       </div>
 
       <!-- Image 2 -->
       <div class="service-item">
-        <img src="@/assets/couv-zinc/démoussage.jpg" alt="Service 2" class="service-image" />
-        <p>Installation de gouttières</p>
+        <img src="@/assets/plom-sani/sanitaire2.jpg" alt="Service 2" class="service-image" />
+        <p>Amènagement de salle de bain</p>
       </div>
 
       <!-- Image 3 -->
       <div class="service-item">
-        <img src="@/assets/couv-zinc/image4.jpg" alt="Service 3" class="service-image" />
-        <p>Réparation de tuiles</p>
+        <img src="@/assets/plom-sani/douche1.jpg" alt="Service 3" class="service-image" />
+        <p>Création de douche PNR</p>
       </div>
     </div>
   </div>

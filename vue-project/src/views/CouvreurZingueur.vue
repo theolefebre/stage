@@ -17,19 +17,19 @@
       <!-- Image 1 -->
       <div class="service-item">
         <img src="@/assets/couv-zinc/image1.jpg" alt="Service 1" class="service-image" />
-        <p>Isolation des combles</p>
+        <p>remplacement de zinguerie/caisson de toiture pvc</p>
       </div>
 
       <!-- Image 2 -->
       <div class="service-item">
         <img src="@/assets/couv-zinc/démoussage.jpg" alt="Service 2" class="service-image" />
-        <p>Installation de gouttières</p>
+        <p>démoussage/traitement anti-mousse</p>
       </div>
 
       <!-- Image 3 -->
       <div class="service-item">
         <img src="@/assets/couv-zinc/image4.jpg" alt="Service 3" class="service-image" />
-        <p>Réparation de tuiles</p>
+        <p>Rénovation de toiture/pose remplacement fenêtrede toit</p>
       </div>
     </div>
   </div>
