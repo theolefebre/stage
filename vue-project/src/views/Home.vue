@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="hero">
-      <img src="../assets/home/image.jpg" alt="caca">
+      <img src="../assets/home/image.jpg">
     </div>
     <div class="hero-text">
       <h1 id="titre">couverture zinguerie fenêtre de toit <br>bardage isolation <br>plomberie sanitaire </h1>
@@ -100,7 +100,7 @@ export default {
 }
 
 #titre {
-  color: rgb(0, 0, 180);
+  color: rgb(21, 21, 187);
   text-transform: uppercase;
 }
 

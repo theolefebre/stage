@@ -1,33 +1,40 @@
 <template>
   <div>
     <h2>Envoyer un email</h2>
-    <form @submit.prevent="sendEmail">
-      <div>
-        <label for="firstName">Prénom :</label>
-        <input type="text" v-model="firstName" id="firstName" placeholder="Votre prénom" required />
+    <div class="box-contact">
+      <form @submit.prevent="sendEmail">
+        <div>
+          <label for="firstName">Prénom :</label>
+          <input type="text" v-model="firstName" id="firstName" placeholder="Votre prénom" required />
+        </div>
+        <div>
+          <label for="lastName">Nom :</label>
+          <input type="text" v-model="lastName" id="lastName" placeholder="Votre nom" required />
+        </div>
+        <div>
+          <label for="phone">Numéro de téléphone :</label>
+          <input type="tel" v-model="phone" placeholder="Votre numéro de téléphone" required />
+        </div>
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" v-model="email" id="email" placeholder="Votre adresse mail" required />
+        </div>
+        <div>
+          <label for="subject">Sujet :</label>
+          <input type="text" v-model="subject" id="subject" required />
+        </div>
+        <div>
+          <label for="message">Message :</label>
+          <textarea v-model="message" id="message" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="autre-contact">
+        <h2>Nous contacter  </h2>
+        <p>Téléphone<br>03 29 94 02 00 / 06 83 49 98 72</p>
+        <p>Email<br>sarl.lefebreetfils@orange.fr</p>
       </div>
-      <div>
-        <label for="lastName">Nom :</label>
-        <input type="text" v-model="lastName" id="lastName" placeholder="Votre nom" required />
-      </div>
-      <div>
-        <label for="phone">Numéro de téléphone :</label>
-        <input type="tel" v-model="phone" placeholder="Votre numéro de téléphone" required />
-      </div>
-      <div>
-        <label for="email">Email :</label>
-        <input type="email" v-model="email" id="email" placeholder="Votre adresse mail" required />
-      </div>
-      <div>
-        <label for="subject">Sujet :</label>
-        <input type="text" v-model="subject" id="subject" required />
-      </div>
-      <div>
-        <label for="message">Message :</label>
-        <textarea v-model="message" id="message" required></textarea>
-      </div>
-      <button type="submit">Envoyer</button>
-    </form>
+    </div>
     <p v-if="responseMessage">{{ responseMessage }}</p>
   </div>
 </template>
@@ -100,12 +107,28 @@ export default {
 
 <style scoped>
 
+.box-contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  box-sizing: border-box;
+}
+
 form {
-  padding: 200px 0;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.autre-contact {
+  background-color: rgb(177, 30, 30);
+  align-items: center;
+  max-width: auto;
+  padding: 20px;
 }
 
 form div {
