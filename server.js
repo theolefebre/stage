@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 app.use(bodyParser.json());
 
 const transporter = nodemailer.createTransport({
@@ -15,14 +16,21 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.post('/send-email', (req, res) => {
-  const { to, from, subject, message } = req.body;
+app.post('/send-email', async (req, res) => {
+  const { firstName, lastName, phone, email, subject, message } = req.body;
+
+  console.log("Données reçues :", req.body);
+  
+  if (!email) {
+    console.error("Email est manquant ou undefined !");
+    return res.status(400).json({ message: "L'adresse e-mail est manquante." });
+  }
 
   const mailOptions = {
-    from,
-    to,
-    subject,
-    text: message
+    from: email,
+    to: "jaquislefebre@gmail.com",
+    subject: subject,
+    text: `Nom : ${firstName} ${lastName}\nPhone : ${phone}\nEmail : ${email}\nMessage :\n${message}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -39,4 +47,3 @@ app.post('/send-email', (req, res) => {
 app.listen(3000, () => {
   console.log('Serveur backend démarré sur http://localhost:3000');
 });
-
