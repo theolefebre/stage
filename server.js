@@ -30,7 +30,7 @@ app.post('/send-email', async (req, res) => {
     from: email,
     to: "jaquislefebre@gmail.com",
     subject: subject,
-    text: `Nom : ${firstName} ${lastName}\nPhone : ${phone}\nEmail : ${email}\nMessage :\n${message}`
+    text: `Nom : ${firstName} ${lastName}\nPhone : ${phone}\nEmail : ${email}\<nMessage :\n${message}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

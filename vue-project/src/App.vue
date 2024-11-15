@@ -3,7 +3,7 @@
     <Header />
     <div class="space-stacking">
       <router-view />
-      <Footer />
+      <Footer v-if="$route.name !== 'contact'"/>
     </div>
   </div>
 </template>
