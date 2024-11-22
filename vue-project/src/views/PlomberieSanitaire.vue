@@ -2,7 +2,7 @@
   <div class="couvreur-page">
     <h1 class="main-title"><br>Plomberie-Sanitaire</h1>
     <div class="main-image-container">
-      <img src="@/assets/couv-zinc/image2.jpg" alt="Couvreur Zingueur" class="main-image" />
+      <img src="@/assets/plom-sani/douche1.jpg" alt="Couvreur Zingueur" class="main-image" />
       <p class="description">
         La plomberie concerne l'installation et l'entretien des conduites d'eau et de gaz, ainsi que le réseau d'évacuation des eaux usées dans un bâtiment. Le sanitaire regroupe les équipements liés à l'hygiène et au confort, tels que les lavabos, toilettes, douches et baignoires, qui sont connectés aux réseaux de plomberie pour l'alimentation en eau et l'évacuation.      </p>
     </div>
@@ -19,14 +19,14 @@
 
       <!-- Image 2 -->
       <div class="service-item">
-        <img src="@/assets/plom-sani/sanitaire2.jpg" alt="Service 2" class="service-image" />
+        <img src="@/assets/plom-sani/sanitaire1.jpg" alt="Service 2" class="service-image" />
         <p>Amènagement de salle de bain</p>
       </div>
 
       <!-- Image 3 -->
       <div class="service-item">
-        <img src="@/assets/plom-sani/douche1.jpg" alt="Service 3" class="service-image" />
-        <p>Création de douche PNR</p>
+        <img src="@/assets/plom-sani/douche-pmr1-1.jpg" alt="Service 3" class="service-image" />
+        <p>Création de douche PMR</p>
       </div>
     </div>
   </div>

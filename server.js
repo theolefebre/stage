@@ -28,9 +28,9 @@ app.post('/send-email', async (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "jaquislefebre@gmail.com",
+    to: "sarl.lefebreetfils@orange.fr",
     subject: subject,
-    text: `Nom : ${firstName} ${lastName}\nPhone : ${phone}\nEmail : ${email}\<nMessage :\n${message}`
+    text: `Nom : ${firstName} ${lastName}\nPhone : ${phone}\nEmail : ${email}\nMessage :\n${message}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

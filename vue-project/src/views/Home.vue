@@ -4,8 +4,10 @@
       <img src="../assets/home/image.jpg">
     </div>
     <div class="hero-text">
-      <h1 id="titre">couverture zinguerie fenêtre de toit <br>bardage isolation <br>plomberie sanitaire </h1>
-
+      <div>
+        <h1 id="titre">couverture zinguerie<br>fenêtre de toit<br>bardage isolation<br>plomberie sanitaire </h1>
+        
+      </div>
     </div>
     <div class="container">
       <div class="square" id="first-one">
@@ -20,14 +22,14 @@
         ]" />
       </div>
       <div class="square">
-        <SquareImage imageSrc="/src/assets/bard-isol/bardage1.jpg" link="services/bardage-isolation">
+        <SquareImage imageSrc="/src/assets/bard-isol/bardage2.jpg" link="services/bardage-isolation">
           <p>bardage isolation</p>
         </SquareImage>
         <Carousel :images="[
           '/src/assets/bard-isol/bardage_metallique.webp',
           '/src/assets/bard-isol/isolation1.webp',
           '/src/assets/bard-isol/isolation2.webp',
-          '/src/assets/bard-isol/isolation2.webp'
+          '/src/assets/bard-isol/bardage1.jpg'
         ]" />
       </div>
       <div class="square" id="last-one">
@@ -35,10 +37,10 @@
           <p>plomberie sanitaire</p>
         </SquareImage>
         <Carousel :images="[
-          '/src/assets/plom-sani/douche1.jpg',
+          '/src/assets/plom-sani/douche-pmr1-1.jpg',
           '/src/assets/plom-sani/sanitaire2.jpg',
-          '/src/assets/plom-sani/sanitaire2.jpg',
-          '/src/assets/plom-sani/sanitaire2.jpg'
+          '/src/assets/plom-sani/sanitaire1.jpg',
+          '/src/assets/plom-sani/douche-pmr1-3.jpg'
         ]" />
       </div>
     </div>
@@ -84,7 +86,7 @@ export default {
   transform: translateY(-50%);
   color: white;
   text-align: left;
-  background-color: #55555589;
+  background-color: #3c3c3c89;
   padding: 20px;
   border-radius: 10px;
 }
@@ -100,7 +102,7 @@ export default {
 }
 
 #titre {
-  color: rgb(21, 21, 187);
+  color: rgb(6, 6, 180);
   text-transform: uppercase;
 }
 
