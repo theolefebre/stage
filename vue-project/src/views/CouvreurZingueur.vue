@@ -5,8 +5,13 @@
       <img src="@/assets/couv-zinc/image2.jpg" alt="Couvreur Zingueur" class="main-image" />
       <p class="description">
         Le couvreur-zingueur est un professionnel du bâtiment spécialisé dans la pose, l'entretien et la réparation de toitures.
-        Il s'occupe également des systèmes d'évacuation des eaux pluviales (gouttières, chéneaux) et des éléments métalliques
-        qui protègent la toiture.
+        Il s'occupe également des systèmes d'évacuation des eaux pluviales (gouttières, noue, tuyau de descente) et des éléments métalliques
+        qui protègent la toiture.<br>- tuile béton, tuile terre cuite, toiture zinc, ardoise, bac acier. <br>
+        - démoussage, grattage, balayage, traitement préventif curatif par pulvérisation
+        <br>- fenêtre de toit, remplacement et pose, volet roulant solaire, store occultation totale.
+        <br>- caisson de toiture bois/pvc
+        <br>- remplacement gouttières, tuyau de descente, noue, garniture de cheminée, rive et main courante.
+        <br>- zinc/cuivre/taule prélaqué de couleur
       </p>
     </div>
     <!-- Texte secondaire -->

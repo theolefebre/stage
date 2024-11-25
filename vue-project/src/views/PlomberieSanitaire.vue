@@ -4,7 +4,12 @@
     <div class="main-image-container">
       <img src="@/assets/plom-sani/douche1.jpg" alt="Couvreur Zingueur" class="main-image" />
       <p class="description">
-        La plomberie concerne l'installation et l'entretien des conduites d'eau et de gaz, ainsi que le réseau d'évacuation des eaux usées dans un bâtiment. Le sanitaire regroupe les équipements liés à l'hygiène et au confort, tels que les lavabos, toilettes, douches et baignoires, qui sont connectés aux réseaux de plomberie pour l'alimentation en eau et l'évacuation.      </p>
+        La plomberie concerne l'installation et l'entretien des conduites d'eau, ainsi que le réseau d'évacuation des eaux usées dans un bâtiment. Le sanitaire regroupe les équipements liés à l'hygiène et au confort, tels que les lavabos, toilettes, douches et baignoires, qui sont connectés aux réseaux de plomberie pour l'alimentation en eau et l'évacuation. 
+      <br>- création/rénovation salle de bain
+      <br>- création douche PMR
+      <br>- emplacement appareil sanitaire
+      <br>- chauffe-eau, lavabo, wc, baingoire, cabine de douche, évier
+      </p>
     </div>
     <!-- Texte secondaire -->
     <h2 class="et-aussi">Et aussi</h2>

@@ -5,7 +5,9 @@
       <img src="@/assets/bard-isol/bardage_metallique.webp" alt="Couvreur Zingueur" class="main-image" />
       <p class="description">
         Le bardage est un revêtement extérieur qui protège les murs des intempéries tout en offrant une touche esthétique, avec des matériaux variés comme le bois, le PVC ou le métal. L'isolation, par l'intérieur ou l'extérieur, vise à améliorer l'efficacité énergétique et le confort thermique en réduisant les pertes de chaleur, souvent combinée avec un bardage pour une protection optimale et des économies d'énergie.
-      </p>
+      <br>- isolation par laine souflée ou déroulée 
+      <br>- bardage bois/métallique.
+    </p>
     </div>
     <!-- Texte secondaire -->
     <h2 class="et-aussi">Et aussi</h2>
