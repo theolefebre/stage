@@ -3,11 +3,25 @@
     <h1 class="main-title"><br>Bardage-Isolation</h1>
     <div class="main-image-container">
       <img src="@/assets/bard-isol/bardage_metallique.webp" alt="Couvreur Zingueur" class="main-image" />
-      <p class="description">
+      <!-- <p class="description">
         Le bardage est un revêtement extérieur qui protège les murs des intempéries tout en offrant une touche esthétique, avec des matériaux variés comme le bois, le PVC ou le métal. L'isolation, par l'intérieur ou l'extérieur, vise à améliorer l'efficacité énergétique et le confort thermique en réduisant les pertes de chaleur, souvent combinée avec un bardage pour une protection optimale et des économies d'énergie.
       <br>- isolation par laine souflée ou déroulée 
       <br>- bardage bois/métallique.
-    </p>
+    </p> -->
+    <p class="description">Ce que notre entreprise peut faire pour l’isolation et le bardage
+      <br>
+      Notre entreprise propose des solutions performantes et durables pour améliorer l’isolation et l’aspect extérieur de votre bâtiment. Voici nos prestations : <br>
+      Isolation thermique efficace  <br>
+      <br>
+          Isolation par laine soufflée : idéale pour combler les espaces difficiles d’accès, cette solution garantit une performance thermique optimale tout en réduisant les pertes d’énergie. <br>
+          Isolation par laine déroulée : parfaite pour les combles aménageables ou les surfaces planes, elle allie simplicité de pose et efficacité énergétique. <br>
+      <br>
+      Bardage esthétique et protecteur
+      <br>
+          Pose de bardages en bois : apportez une touche naturelle et chaleureuse à votre façade tout en la protégeant des intempéries. <br>
+          Installation de bardages métalliques : pour un style contemporain et une durabilité exceptionnelle face aux agressions extérieures. <br>
+      <br>
+      Avec nos solutions d’isolation et de bardage, nous vous aidons à améliorer le confort de votre habitat tout en valorisant son esthétique et en optimisant son efficacité énergétique.</p>
     </div>
     <!-- Texte secondaire -->
     <h2 class="et-aussi">Et aussi</h2>

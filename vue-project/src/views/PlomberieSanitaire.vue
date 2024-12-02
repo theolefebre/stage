@@ -3,12 +3,31 @@
     <h1 class="main-title"><br>Plomberie-Sanitaire</h1>
     <div class="main-image-container">
       <img src="@/assets/plom-sani/douche1.jpg" alt="Couvreur Zingueur" class="main-image" />
-      <p class="description">
+      <!-- <p class="description">
         La plomberie concerne l'installation et l'entretien des conduites d'eau, ainsi que le réseau d'évacuation des eaux usées dans un bâtiment. Le sanitaire regroupe les équipements liés à l'hygiène et au confort, tels que les lavabos, toilettes, douches et baignoires, qui sont connectés aux réseaux de plomberie pour l'alimentation en eau et l'évacuation. 
       <br>- création/rénovation salle de bain
       <br>- création douche PMR
       <br>- emplacement appareil sanitaire
       <br>- chauffe-eau, lavabo, wc, baingoire, cabine de douche, évier
+      </p> -->
+      <p>
+        Nous vous accompagnons dans tous vos projets de création, rénovation ou aménagement d'espaces sanitaires. Découvrez nos services : <br>
+        Création et rénovation de salles de bain
+      <br>
+          Création complète de salles de bain personnalisées, adaptées à vos envies et à vos besoins. <br>
+          Rénovation de salles de bain existantes pour leur redonner modernité, confort et fonctionnalité. <br>
+      <br>
+      Douches accessibles (PMR) <br>
+      <br>
+          Conception et installation de douches adaptées pour les personnes à mobilité réduite (PMR) : pratiques, sécurisées et esthétiques. <br>
+      <br>
+      Installation d’appareils sanitaires <br>
+      <br>
+          Pose et raccordement d’une large gamme d’équipements : <br>
+              Chauffe-eau : pour un confort en eau chaude fiable et économique. <br>
+              Lavabos, éviers, WC, baignoires, cabines de douche : des installations sur mesure et durables. <br> 
+      <br>
+      Que ce soit pour moderniser une pièce d'eau, créer un espace confortable ou adapter votre salle de bain à des besoins spécifiques, notre entreprise met son expertise au service de vos projets.
       </p>
     </div>
     <!-- Texte secondaire -->
